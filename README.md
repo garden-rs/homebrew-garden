@@ -9,4 +9,4 @@ Run these steps to install `garden` using Homebrew on macOS:
     brew install garden
 
 The formula in this repository will be contributed to homebrew-core and retired
-once Garden gets enough forks, watchers or stars.
+[once Garden gets enough forks, watchers or stars](https://github.com/Homebrew/homebrew-core/pull/119195).

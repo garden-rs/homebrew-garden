@@ -1,8 +1,8 @@
 class Garden < Formula
   desc "Grow and cultivate collections of Git trees"
   homepage "https://github.com/davvid/garden"
-  url "https://github.com/davvid/garden/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "4b319db036765d7cb8600f41ebb86d6d70509c3aaa3da0eba68bdc25a9bf5ebf"
+  url "https://github.com/davvid/garden/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "7aa1f8f4afc6681fe8aabe47be3cbe9a57d377050378bcfca393d609c4051ed3"
   license "MIT"
   head "https://github.com/davvid/garden.git", branch: "main"
 
@@ -16,12 +16,11 @@ class Garden < Formula
     (testpath/"garden.yaml").write <<~EOS
       trees:
         current:
-          path: .
+          path: ${GARDEN_CONFIG_DIR}
           commands:
-            test: touch ${TREE_NAME}
-      commands:
-        test: touch ${name}
-      variables:
+            test: |
+              touch ${TREE_NAME}
+              test: touch ${name}
         name: $ echo garden
     EOS
     system bin/"garden", "-vv", "test", "current"

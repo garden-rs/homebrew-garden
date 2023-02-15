@@ -1,8 +1,8 @@
 class Garden < Formula
   desc "Grow and cultivate collections of Git trees"
   homepage "https://github.com/davvid/garden"
-  url "https://github.com/davvid/garden/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "7aa1f8f4afc6681fe8aabe47be3cbe9a57d377050378bcfca393d609c4051ed3"
+  url "https://github.com/davvid/garden/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "84d53e770f64ccc7c29d34bbb6b70a63481b3cac999ae35e481ec0629a496018"
   license "MIT"
   head "https://github.com/davvid/garden.git", branch: "main"
 

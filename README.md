@@ -5,7 +5,7 @@ the Git multi-repo powertool.
 
 Run these steps to install `garden` using Homebrew on macOS:
 
-    brew tap garden-rs/homebrew-garden https://gitlab.com/garden-rs/homebrew-garden
+    brew tap garden-rs/garden https://gitlab.com/garden-rs/homebrew-garden
     brew install garden
 
 The formula in this repository will be contributed to homebrew-core and retired

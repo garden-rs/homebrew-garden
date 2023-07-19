@@ -1,11 +1,11 @@
 # Homebrew Formula for Garden
 
-Homebrew formula for [Garden](https://github.com/davvid/garden), the Git
-multi-repo powertool.
+Homebrew formula for [Garden](https://gitlab.com/garden-rs/garden),
+the Git multi-repo powertool.
 
 Run these steps to install `garden` using Homebrew on macOS:
 
-    brew tap davvid/homebrew-garden
+    brew tap garden-rs/homebrew-garden https://gitlab.com/garden-rs/homebrew-garden
     brew install garden
 
 The formula in this repository will be contributed to homebrew-core and retired

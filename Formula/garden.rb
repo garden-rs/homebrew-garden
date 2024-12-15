@@ -1,8 +1,8 @@
 class Garden < Formula
   desc "Grow and cultivate collections of Git trees"
   homepage "https://gitlab.com/garden-rs/garden"
-  url "https://gitlab.com/garden-rs/garden/-/archive/v1.9.1/garden-v1.9.1.tar.gz"
-  sha256 "efe47a5d4f1130608766bb9536164fcb065705bbe12f62003e3684bc19134ece"
+  url "https://gitlab.com/garden-rs/garden/-/archive/v1.10.0/garden-v1.10.0.tar.gz"
+  sha256 "38ab2e096a16fb66d05a86416a61329f0e42d4a31a12ef3dbc1f12fb2441ca6e"
   license "MIT"
   head "https://gitlab.com/garden-rs/garden.git", branch: "main"
 

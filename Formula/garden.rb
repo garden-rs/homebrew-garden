@@ -1,8 +1,8 @@
 class Garden < Formula
   desc "Grow and cultivate collections of Git trees"
   homepage "https://gitlab.com/garden-rs/garden"
-  url "https://gitlab.com/garden-rs/garden/-/archive/v1.10.0/garden-v1.10.0.tar.gz"
-  sha256 "38ab2e096a16fb66d05a86416a61329f0e42d4a31a12ef3dbc1f12fb2441ca6e"
+  url "https://gitlab.com/garden-rs/garden/-/archive/v2.0.0/garden-v2.0.0.tar.gz"
+  sha256 "5b2bfe7cbef77da57a3a52db8c5be1c24c64bf6b05eb802b4ca6c727f435a3c6"
   license "MIT"
   head "https://gitlab.com/garden-rs/garden.git", branch: "main"
 
@@ -10,6 +10,7 @@ class Garden < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+    system "cargo", "install", *std_cargo_args(path: "gui")
   end
 
   test do
